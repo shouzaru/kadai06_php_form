@@ -6,6 +6,23 @@ $your_email =$post['your_email'];
 $kikkake = $post['kikkake'];
 $Motivation = implode(",", $post['Motivation']);    //配列を受け取る。","で区切って表示。
 $detail = $post['detail'];
+$error = [];
+
+if(!empty($post)){
+    if($your_name == ""){
+        echo 'お名前を入力してください';
+        echo '<br>';}
+    if($your_name_kana == ""){
+        echo 'カナを入力してください';
+        echo '<br>';}
+    if($your_email == ""){
+        echo 'メールアドレスを入力してください';
+        echo '<br>';}
+    if($Motivation == ""){
+        echo '志望動機を選択してください';
+        echo '<br>';}
+}
+
 ?>
 
 
@@ -56,15 +73,11 @@ $detail = $post['detail'];
             <td><?=$Motivation?></td>
         </tr>
         <tr>
-            <th>詳細</th>
+            <th>その他お問合せ</th>
             <td><?=$detail?></td>
         </tr>
-
-
-
     </table>
     <br>
-
     <a href="index.html">チーズアカデミーのホームページに戻る</a>
 
     
