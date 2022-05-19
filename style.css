@@ -1,0 +1,292 @@
+@charset "utf-8";
+html{
+    width:1366px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+/* 共通 */
+h2{
+    margin:60px auto 30px;
+}
+
+.sub-title{
+    margin: 30px auto 60px;
+}
+
+/* ヘッダーのナビゲーション */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav img{
+    display: block;
+    display: flex;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    font-size: 21px;
+    width:100px;
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-right:50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+/* トップ画像の装飾 */
+header{
+    position:relative;
+}
+header img{
+    max-width: 100%;
+    height: auto;
+}
+header .title{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); 
+}
+
+header .title .a{
+    color:white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+header .title .b{
+    color:white;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* ABOUTの部分 */
+#about .wrap p{
+    margin-bottom: 40px;
+}
+
+#about .photo{
+    margin: 80px auto 60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/* COURSE部分のcontentsクラスの写真とテキストの交互ならび */
+#course p{
+    margin: 30px auto 60px;
+}
+
+.column-wrapper {
+    display: flex;
+    text-align: left;
+}
+
+.column-wrapper:nth-of-type(odd) {
+  flex-direction: row-reverse;
+}
+
+.column1, .column2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column1 {
+    background: #fafafa;
+}
+ 
+.column1 .title {
+    font-size: 24px;
+}
+.column1 .txt {
+    font-size: 16px;
+}
+.column2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* NEWSの部分 */
+#news .contents{
+    display: flex;
+    justify-content: center;
+}
+
+#news .contents .content{
+    margin:0 15px 0;
+}
+
+#news .contents .content p{
+    text-align: left;
+    width: 300px;
+    margin: 30px auto 24px;
+}
+#news .contents .content img{
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+#news .more-btn{
+    width: 300px;
+    height: 50px;
+    background-color: #ffd61a;
+    display: block;
+    margin: 30px auto 140px;
+    border: none;
+    border-radius: 30px;
+    
+}
+
+#news a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top:18px;
+}
+
+#news .content:hover{
+    opacity:0.6;
+}
+
+/* NEWSのボタンのホバーアクション */
+#news .more-btn:hover{
+    background-color: green;
+}
+
+
+
+/* ACCESSの部分の装飾 */
+
+#access iframe{
+    width: 1000px;
+    margin-bottom: 60px;
+}
+
+#access dl{
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#access dl dt{
+    width: 200px;
+}
+
+#access dl dd{
+    width: 400px;
+}
+
+#access dl dt, dd{
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+
+
+
+/* コンタクトフォームの上のテキスト装飾 */
+.contact1{
+    margin: 30px auto 60px;
+}
+.contact2{
+    margin: 60px auto 30px;
+}
+.contact3{
+    margin: 30px auto 70px;
+}
+
+/* コンタクトフォームの部分 */
+
+#contact{
+    width: 1000px;
+    margin: auto;
+}
+
+#contact table{
+    width:100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+#contact .contact-item, .contact-body{
+    padding: 8px;
+    border: 1px solid;
+    border-color: #bfbfbf;
+}
+
+#contact .contact-item{
+    text-align: left;
+    /* width: 30%; */
+    padding-left: 16px;
+}
+#contact .contact-body{
+    text-align: left;
+    width:70%;
+}
+
+#contact .siboudouki{
+    margin:24px;
+}
+
+#contact textarea{
+    width: 328px;
+}
+
+#contact .contact-submit{
+    width: 300px;
+    height: 50px;
+    background-color: #ffd61a;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto 140px;
+    font-size: 24px;
+    border: none;
+    border-radius: 30px;
+
+}
+
+#contact .contact-submit:hover{
+    background-color: green;
+}
+
+/* footerの装飾 */
+#footer{ 
+    background-color: #707070;
+    color: #fafafa;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
